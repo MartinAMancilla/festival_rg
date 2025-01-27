@@ -33,11 +33,30 @@ body {
 .mainIndex {
   display: flex;
   justify-content: center;
-  padding-top: auto;
+  padding-top: 100px;
 }
 
 #logorg {
   max-width: 100%;
   width: 25%;
   height: auto;
+}
+
+.footerIndex img {
+  width: 100px;
+  height: auto;
+  max-width: 100%;
+}
+
+.footerIndex {
+  height: 100px;
+  margin: auto;
+  width: 400px;
+  text-align: center;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
 }
