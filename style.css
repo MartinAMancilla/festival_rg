@@ -1,44 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
 
-body{
+body {
   margin: 0px;
   height: 0px;
   overflow: hidden;
   background-image: url(/assets/index\ –\ 1weew.png);
-  background-size: cover;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
 }
 
-.navbar {
-  background-color: #300e74;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-auto-flow: column;
-}
-
-.navbar ul {
-  list-style-type: none;
-}
-
-.navbar a {
-  color: #ffffff;
+* {
+  color: white !important;
   text-decoration: none;
   font-family: "Big Shoulders Display", serif;
   font-weight: 900;
   font-size: large;
-  text-shadow: 2px 2px 10px #000000;
+  text-shadow: 2px 1.5px 3px #000000;
+  letter-spacing: 1.5px;
 }
 
-.navbar ul, li, a {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  place-content: center;
-  padding: 0 1vw;
-  justify-content: end;
+/* HEADER COMPLETO */
+
+.navbar-brand img {
+  width: 35px;
+  height: 35px;
 }
 
-.membrete img{
+.navbar.navbar.navbar-expand-lg {
+  background-color: #542E79;
+}
+
+.navbar-toggler {
+  width: 21px;
+  height: 21px;
+  position: relative;
+  transition: .5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ffff;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* CUANDO SE HACE CLICK */
+
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+/* ESTADO CUANDO EL NAVBAR ESTA COLAPSADO */
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+
+.membrete img {
   width: 100px;
   height: auto;
 }
@@ -50,29 +112,30 @@ body{
   bottom: 20px;
 }
 
-.logoRGheader img {
-  height: calc(var(--nav-height));
-  width: 50px;
-  padding: 10px;
-  animation: logoEase 1s;
+.center-block {
+  width: 50%;
+  height: auto;
 }
 
-.logoRG{
+.container {
+  margin-top: 9vh;
+}
+
+footer {
   display: flex;
   justify-content: center;
-  margin-top: 120px;
-  margin-bottom: 250px;
+  position: sticky;
+  bottom: 20px;
 }
 
-.logoRG img{
-  width: 550px;
-  max-width: 100%;
-  height: auto;
-  animation-name: logoEase;
-  animation-duration: 2s;
-}
+/* ANIMACIONES */
 
 @keyframes logoEase {
-  from {opacity: 0;}
-  to {opacity: 100;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
 }

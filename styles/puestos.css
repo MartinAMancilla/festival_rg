@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+
+body{
+    background-image: url(/assets/fondo\ 1920x2160azul.png);
+    background-size: cover;
+}
+
+.custom-navbar{
+    background-color: #542E79;
+}
+
+.navbar-nav li{
+    text-decoration: none;
+    font-family: "Big Shoulders Display", serif;
+    font-weight: 900;
+    font-size: large;
+    text-shadow: 2px 2px 10px #000000;
+    color: #ffffff;
+}
+
+.navbar-brand img{
+    height: 40px;
+    width: 40px;
+}
+
+
