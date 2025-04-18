@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
         content="Página de la Municipalidad de Río Gallegos que informa a los ciudadanos y turistas de los espectáculos en la ciudad." />
+    <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/puestos.css" />
     <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,25 +18,97 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm custom-navbar">
-        <div class="container index">
-            <a href="/index.html" class="navbar-brand">
-                <img src="/assets/logo naranja con sombra.png" alt="" class="d-inline-block align-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
-                <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="/index.html" class="navbar-brand"><img src="/assets/logo naranja con sombra.png" alt=""></a>
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
             </button>
-            <div class=".collapse .navbar-collapse" id="navbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a href="/views/artistas.html" class="nav-link">ARTISTAS</a></li>
-                    <li class="nav-item"><a href="/views/ubicaciones.html" class="nav-link">UBICACIONES</a></li>
-                    <li class="nav-item"><a href="/views/puestos.html" class="nav-link">PUESTOS</a></li>
-                    <li class="nav-item"><a href="/views/contactos.html" class="nav-link">CONTACTOS</a></li>
-                    <li class="nav-item"><a href="/views/galeria.html" class="nav-link">GALERÍA</a></li>
-                </ul>
-            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-3 mb-2 mb-lg-0 me-lg-3">
+                <li class="nav-item"><a class="nav-link active" aria-current="page"
+                        href="/views/artistas.html">ARTISTAS</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/views/ubicaciones.html">UBICACIONES</a></li>
+                <li class="nav-item"><a class="nav-link" href="/views/puestos.html">PUESTOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="/views/contactos.html">CONTACTOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="/views/galeria.html">GALERÍA</a></li>
+            </ul>
         </div>
     </nav>
+    <main>
+        <h1>PUESTOS</h1>
+        <div class="container firstblock">
+            <div class="row justify-content-start">
+                <div class="col ambientetext">
+                    <span class="firsttext">EL AMBIENTE GASTRONÓMICO DEL FESTIVAL DE RÍO GALLEGOS ES ÚNICO <br>
+                    </span>
+                    <span class="sndtext blockquote-footer">Una mezcla de tradición, modernidad,
+                        y una cálida hospitalidad</span>
+                </div>
+                <div class="row align-items-end">
+                    <div class="col-6">
+                        <img class="ru" src="/assets/img/rural3.png" alt="">
+                    </div>
+                    <div class="col-6">
+                        <img src="/assets/img/rural4.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container secondblock">
+                <div class="row justify-content-start">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-5 text-warp">
+                            <span class="thdtext">CADA PUESTO ES ATENDIDO POR EMPRENDEDORES LOCALES QUE 
+                                COMPARTEN SU AMOR POR 
+                                LA GASTRONOMÍA Y CULTURA DE SU TIERRA.
+                            </span>
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <img class="ru2" src="/assets/img/rural6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container thirdblock">
+                    <div class="row justify-content-start">
+                        <div class="col ambientetext">
+                            <span class="firsttext">ES UN EVENTO DONDE NO SOLO SE CELEBRA LA COMIDA <br>
+                            </span>
+                            <span class="sndtext blockquote-footer">Sino también el encuentro, la comunidad 
+                                y el orgullo por lo que se produce en la región.</span>
+                        </div>
+                        <div class="row align-items-end">
+                            <div class="col-6">
+                                <img class="ru" src="/assets/img/rural5.png" alt="">
+                            </div>
+                            <div class="col-6">
+                                <img src="/assets/img/rural7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+            
+    </main>
 </body>
+<footer class="d-flex align-items-center">
+    <div class="row justify-content-between align-items-center">
+        <div class="columns col-md-4 d-flex justify-content-center">
+            <img class="logomuni" src="/assets/logomuni.png" alt="Membrete Blanco" />
+        </div>
+        <div class="columns col-md-4 d-flex justify-content-center align-items-center text-center">
+            <p>
+                SECRETARÍA DE COORDINACIÓN EJECUTIVA / DIRECCIÓN DE COMUNICACIÓN
+                PÚBLICA
+            </p>
+        </div>
+        <div class="columns col-md-4 d-flex justify-content-center">
+            <img class="logorg" src="/assets/logorg.png" alt="Logo G" />
+        </div>
+    </div>
+</footer>
 
 </html>

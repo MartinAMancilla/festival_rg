@@ -1,141 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
 
 body {
-  margin: 0px;
-  height: 0px;
   overflow: hidden;
   background-image: url(/assets/index\ –\ 1weew.png);
 }
 
-* {
+span {
+  font-family: "Big Shoulders Display", serif;
+  font-size: calc(50px + 0.390625vw);
+  font-weight: 900;
   color: white !important;
   text-decoration: none;
-  font-family: "Big Shoulders Display", serif;
-  font-weight: 900;
-  font-size: large;
   text-shadow: 2px 1.5px 3px #000000;
   letter-spacing: 1.5px;
 }
 
-/* HEADER COMPLETO */
-
-.navbar-brand img {
-  width: 35px;
-  height: 35px;
-}
-
-.navbar.navbar.navbar-expand-lg {
-  background-color: #542E79;
-}
-
-.navbar-toggler {
-  width: 21px;
-  height: 21px;
-  position: relative;
-  transition: .5s ease-in-out;
-}
-
-.navbar-toggler,
-.navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
-  outline: none;
-  box-shadow: none;
-  border: 0;
-}
-
-.navbar-toggler span {
-  margin: 0;
-  padding: 0;
-}
-
-.toggler-icon {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: #ffff;
-  border-radius: 1px;
-  opacity: 1;
-  left: 0;
-  transform: rotate(0deg);
-  transition: .25s ease-in-out;
-}
-
-.middle-bar {
-  margin-top: 0px;
-}
-
-/* CUANDO SE HACE CLICK */
-
-.navbar-toggler .top-bar {
-  margin-top: 0px;
-  transform: rotate(135deg);
-}
-
-.navbar-toggler .middle-bar {
-  opacity: 0;
-  filter: alpha(opacity=0);
-}
-
-.navbar-toggler .bottom-bar {
-  margin-top: 0px;
-  transform: rotate(-135deg);
-}
-
-/* ESTADO CUANDO EL NAVBAR ESTA COLAPSADO */
-
-.navbar-toggler.collapsed .top-bar {
-  margin-top: -20px;
-  transform: rotate(0deg);
-}
-
-.navbar-toggler.collapsed .middle-bar {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
-.navbar-toggler.collapsed .bottom-bar {
-  margin-top: 20px;
-  transform: rotate(0deg);
-}
-
-.membrete img {
-  width: 100px;
-  height: auto;
-}
-
-.membrete {
+body main {
   display: flex;
   justify-content: center;
-  position: sticky;
-  bottom: 20px;
-}
-
-.center-block {
-  width: 50%;
-  height: auto;
-}
-
-.container {
-  margin-top: 9vh;
+  align-items: center;
+  height: 85vh;
 }
 
 footer {
-  display: flex;
-  justify-content: center;
   position: sticky;
-  bottom: 20px;
+  min-height: auto;
 }
 
-/* ANIMACIONES */
+footer .row {
+  margin: 0 auto;
+  min-width: auto;
+  width: 90vw;
+}
 
-@keyframes logoEase {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 100;
-  }
+footer .columns {
+  min-width: 120px;
+  width: auto;
+  max-width: 120px;
+  margin: 0 auto;
 }

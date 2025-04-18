@@ -1,0 +1,176 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+    10. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* 11. Bootstrap style header */
+
+  .navbar a{
+      color: white !important;
+      text-decoration: none;
+      font-family: "Big Shoulders Display", serif;
+      font-weight: 900;
+      font-size: large;
+      text-shadow: 2px 1.5px 3px #000000;
+      letter-spacing: 1.5px;
+    }
+    
+    .navbar-brand img {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .navbar.navbar.navbar-expand-lg {
+      background-color: #542E79;
+    }
+    
+    .navbar-toggler {
+      width: 21px;
+      height: 21px;
+      position: relative;
+      transition: .5s ease-in-out;
+    }
+  
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: 0;
+  }
+  
+  .navbar-toggler span {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #ffff;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  
+  .middle-bar {
+    margin-top: 0px;
+  }
+  
+  /* CUANDO SE HACE CLICK */
+  
+  .navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(135deg);
+  }
+  
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  
+  .navbar-toggler .bottom-bar {
+    margin-top: 0px;
+    transform: rotate(-135deg);
+  }
+  
+  /* ESTADO CUANDO EL NAVBAR ESTA COLAPSADO */
+  
+  .navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0deg);
+  }
+  
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  
+  .navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
+    transform: rotate(0deg);
+  }
+
+p{
+  margin: 0 0 0 0 !important;
+} 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
         content="Página de la Municipalidad de Río Gallegos que informa a los ciudadanos y turistas de los espectáculos en la ciudad." />
+    <link rel="stylesheet" href="/styles/reset.css">
     <link rel="stylesheet" href="/styles/ubicaciones.css" />
     <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,64 +18,92 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logoRG">
-            <a href="/index.html">
-                <img src="/assets/logo naranja con sombra.png" alt="Logo Festival RG" />
-            </a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="/index.html" class="navbar-brand"><img src="/assets/logo naranja con sombra.png" alt=""></a>
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
         </div>
-        <ul>
-            <li><a href="/views/artistas.html">ARTISTAS</a></li>
-            <li><a href="/views/ubicaciones.html">UBICACIONES</a></li>
-            <li><a href="/views/puestos.html">PUESTOS</a></li>
-            <li><a href="/views/contactos.html">CONTACTOS</a></li>
-            <li><a href="/views/galeria.html">GALERÍA</a></li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-3 mb-2 mb-lg-0 me-lg-3">
+                <li class="nav-item"><a class="nav-link active" aria-current="page"
+                        href="/views/artistas.html">ARTISTAS</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/views/ubicaciones.html">UBICACIONES</a></li>
+                <li class="nav-item"><a class="nav-link" href="/views/puestos.html">PUESTOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="/views/contactos.html">CONTACTOS</a></li>
+                <li class="nav-item"><a class="nav-link" href="/views/galeria.html">GALERÍA</a></li>
+            </ul>
+        </div>
     </nav>
-    <h1>UBICACIONES</h1>
-    <div class="mapa">
-        <img src="/assets/MAPA 139 MEDIO PELO.png" alt="">
-    </div>
-    <div class="boxing">
-        <h2>ESCENARIO BOXING CLUB</h2>
-        <div class="imgs">
-            <img class="img1" src="/assets/img/dron boxing.JPG" alt="Escenario Boxing Club" />
-            <img class="img2" src="/assets/img/boxing escenario.png" alt="Escenario Boxing Club 2" />
+    <main>
+        <h1>UBICACIONES</h1>
+        <div class="mapa">
+            <img src="/assets/ubicaciones_mapa.png" alt="">
         </div>
-        <div class="descripcionB">
-            Fundada el 23 de agosto de 1920, la Asociación Atlético Boxing Club
-            es una institución centenaria de la ciudad de Río Gallegos.
-            Desde el festival 136 que el predio del Boxing Club es sede
-            oficial del festival más grande de la Patagonia Argentina.
+        <div class="boxing">
+            <h2>ESCENARIO BOXING CLUB</h2>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-4">
+                        <img class="img2" src="/assets/img/boxing escenario.png" alt="Escenario Rural" />
+                        <!-- <img class="img4" src="/assets/img/rural2.jpg" alt="Escenario Rural 2" /> -->
+                    </div>
+                    <div class="col-8">
+                        <!-- <img class="img3" src="/assets/img/rural1.jpg" alt="Escenario Rural" /> -->
+                        <img class="img1" src="/assets/img/dron boxing.JPG" alt="Escenario Rural 2" />
+                    </div>
+                </div>
+            </div>
+            <div class="descripcionB">
+                Fundada el 23 de agosto de 1920, la Asociación Atlético Boxing Club
+                es una institución centenaria de la ciudad de Río Gallegos.
+                Desde el festival 136 que el predio del Boxing Club es sede
+                oficial del festival más grande de la Patagonia Argentina.
+            </div>
         </div>
-    </div>
-    <div class="rural">
-        <h2>ESCENARIO RURAL</h2>
-        <div class="imgs_r">
-            <img class="img3" src="/assets/img/rural1.jpg" alt="Escenario Rural" />
-            <img class="img4" src="/assets/img/rural2.jpg" alt="Escenario Rural 2" />
+        <div class="rural">
+            <h2>ESCENARIO RURAL</h2>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-6">
+                        <img class="img3" src="/assets/img/rural1.jpg" alt="Escenario Rural" />
+                        <!-- <img class="img4" src="/assets/img/rural2.jpg" alt="Escenario Rural 2" /> -->
+                    </div>
+                    <div class="col-6">
+                        <!-- <img class="img3" src="/assets/img/rural1.jpg" alt="Escenario Rural" /> -->
+                        <img class="img4" src="/assets/img/rural2.jpg" alt="Escenario Rural 2" />
+                    </div>
+                </div>
+            </div>
+            <div class="descripcionR col-8">
+                Fundada por A. Morrison en 1909, refundada en 1918 y la última vez en 1921
+                de la mano de Ibon Noya, la Sociedad Rural forma parte del festival de
+                Río Gallegos desde el mismo tiempo que lo hace el Boxing Club,
+                siéndo host de muchos artistas y emprendedores locales
+                que elevan el atractivo turístico de nuestra ciudad capital.
+            </div>
         </div>
-        <div class="descripcionR">
-            Fundada por A. Morrison en 1909, refundada en 1918 y la última vez en 1921
-            de la mano de Ibon Noya, la Sociedad Rural forma parte del festival de
-            Río Gallegos desde el mismo tiempo que lo hace el Boxing Club,
-            siéndo host de muchos artistas y emprendedores locales
-            que elevan el atractivo turístico de nuestra ciudad capital.
-        </div>
-    </div>
+    </main>
 </body>
-<footer>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-4">
-                <img class="logof"src="/assets/membrete blanco.png" alt="">
-            </div>
-            <div class="col-md-4">
-                <p>SECRETARÍA DE COORDINACIÓN EJECUTIVA / DIRECCIÓN DE COMUNICACIÓN PÚBLICA</p>
-            </div>
-            <div class="col-md-4">
-                <img class="logof"src="/assets/G.png" alt="">
-            </div>
+<footer class="d-flex align-items-center">
+    <div class="row justify-content-between align-items-center">
+        <div class="columns col-md-4 d-flex justify-content-center">
+            <img class="logomuni" src="/assets/logomuni.png" alt="Membrete Blanco" />
+        </div>
+        <div class="columns col-md-4 d-flex justify-content-center align-items-center">
+            <p>
+                SECRETARÍA DE COORDINACIÓN EJECUTIVA / DIRECCIÓN DE COMUNICACIÓN
+                PÚBLICA
+            </p>
+        </div>
+        <div class="columns col-md-4 d-flex justify-content-center">
+            <img class="logorg" src="/assets/logorg.png" alt="Logo G" />
         </div>
     </div>
 </footer>
